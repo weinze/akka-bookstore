@@ -1,0 +1,3 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/weinze/dev/akka-bookstore/src/main/resources/test.csv,/home/weinze/dev/akka-bookstore/target/scala-2.13/classes/test.csv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/weinze/dev/akka-bookstore/src/main/resources/books.csv,/home/weinze/dev/akka-bookstore/target/scala-2.13/classes/books.csv)[0m
