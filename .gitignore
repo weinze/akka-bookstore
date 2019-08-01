@@ -1,0 +1,13 @@
+logs
+project/target
+target
+/.idea
+/*.iml
+/.idea_modules
+/.classpath
+/.project
+/.settings
+.target
+.cache
+*.class
+/bin

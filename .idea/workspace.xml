@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb025d7-2ad4-40fb-b58e-25bd5649408c" name="Default Changelist" comment="" />
+    <list default="true" id="9bb025d7-2ad4-40fb-b58e-25bd5649408c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f29ea7533648db2c34c$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f29ea7533648db2c34c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$5f29ea7533648db2c34c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/akka-bookstore_2.13-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/akka-bookstore_2.13-0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/weinze/akka/bookstore/readers/BookReader$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/weinze/akka/bookstore/readers/BookReader$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/weinze/akka/bookstore/readers/BookReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/weinze/akka/bookstore/readers/BookReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.13.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -35,7 +53,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="3" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="1" />
           <entry key="Scala" value="30" />
           <entry key="sbt" value="1" />
         </counts>
@@ -77,14 +96,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/weinze/akka/bookstore/readers/BookReader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            <state relative-caret-position="252">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -202,6 +230,9 @@
       <find>title</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -217,6 +248,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/weinze/akka/bookstore/exceptions/BookstoreException.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/weinze/akka/bookstore/readers/CsvReader.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/weinze/akka/bookstore/readers/BookReader.scala" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -323,6 +355,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -338,127 +371,7 @@
             <path>
               <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
               <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="readers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="akka-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="akka-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="weinze" type="462c0819:PsiDirectoryNode" />
-              <item name="akka" type="462c0819:PsiDirectoryNode" />
-              <item name="bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -601,14 +514,14 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.32939914" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053364" side_tool="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32939914" />
@@ -792,11 +705,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/weinze/akka/bookstore/readers/BookReader.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="252">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
             <element signature="e#39#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/build.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
