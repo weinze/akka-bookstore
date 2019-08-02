@@ -13,44 +13,48 @@ class BookReader()(implicit val executor: ExecutionContext) extends CsvReader[Bo
 
   protected override val FILE_PATH: String = ROOT_PATH.concat("test.csv")
 
-  private[readers] override def mapToEntity: Flow[Map[String, String], Future[Book], NotUsed] = Flow[Map[String, String]].map { data =>
-    try {
+  private[readers] override def mapToEntity: Flow[Map[String, String], Future[Book], NotUsed] =
+    Flow[Map[String, String]].map { data =>
+      try {
 
-      val isbn = data.get(ISBN_FIELD).map(_.trim).getOrElse("")
+        // TODO The field 'isbn13' can be used if 'isbn' is empty
+        val isbn = data.get(ISBN_FIELD).map(_.trim).getOrElse("")
 
-      val completeTitle = parseTitle(data.get(TITLE_FIELD))
-      val title = completeTitle._1
-      val series = parseSeries(completeTitle._2)
+        val completeTitle = parseTitle(data.get(TITLE_FIELD))
+        val title = completeTitle._1
+        val series = parseSeries(completeTitle._2)
 
-      val authors = data.get(AUTHORS_FIELD).map(_.split(AUTHORS_REGEX).map(_.trim).filter(_.nonEmpty).toSeq).getOrElse(Seq.empty)
+        val authors = data.get(AUTHORS_FIELD)
+          .map(_.split(AUTHORS_REGEX).map(_.trim).filter(_.nonEmpty).toSeq)
+          .getOrElse(Seq.empty)
 
-      val goodreads = GoodreadsBook(
-        toLong(data, GOODREADS_ID_FIELD),
-        data.get(GOODREADS_COUNT_FIELD).map(_.trim).filter(_.nonEmpty).map(_.toInt),
-        data.get(GOODREADS_AVERAGE_FIELD).map(_.trim).filter(_.nonEmpty).map(_.toDouble),
-        data.get(GOODREADS_RATINGS_FIELD).map(_.trim).filter(_.nonEmpty).map(_.toLong)
-      )
-
-      val year = parseYear(data)
-
-      val imageUrl = data.get(IMAGE_FIELD).map(_.trim).filter(_.nonEmpty).orElse(None)
-
-      Future.successful {
-        Book(
-          isbn,
-          title,
-          series,
-          authors,
-          year,
-          goodreads,
-          imageUrl
+        val goodreads = GoodreadsBook(
+          toLong(data, GOODREADS_ID_FIELD),
+          data.get(GOODREADS_COUNT_FIELD).map(_.trim).filter(_.nonEmpty).map(_.toInt),
+          data.get(GOODREADS_AVERAGE_FIELD).map(_.trim).filter(_.nonEmpty).map(_.toDouble),
+          data.get(GOODREADS_RATINGS_FIELD).map(_.trim).filter(_.nonEmpty).map(_.toLong)
         )
+
+        val year = parseYear(data)
+
+        val imageUrl = data.get(IMAGE_FIELD).map(_.trim).filter(_.nonEmpty).orElse(None)
+
+        Future.successful {
+          Book(
+            isbn,
+            title,
+            series,
+            authors,
+            year,
+            goodreads,
+            imageUrl
+          )
+        }
+      } catch {
+        case re: ReaderException => Future.failed(re)
+        case NonFatal(e) => Future.failed(BookstoreException(e, data))
       }
-    } catch {
-      case re: ReaderException  => Future.failed(re)
-      case NonFatal(e)          => Future.failed(BookstoreException(e, data))
     }
-  }
 
   private def toLong(data: Map[String, String], key: String): Long = {
     data.get(key).map(_.trim).filter(_.nonEmpty).map(_.toLong).getOrElse(throw ReaderException(key, data))

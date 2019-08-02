@@ -30,7 +30,7 @@ class BookReaderSuite extends BaseSuite with ScalaFutures {
 
   "Parse map to entity" should {
 
-    sub.request(33) // TODO
+    sub.request(34) // TODO
 
     "incomplete csv line" in {
       pub.sendNext(Map(ISBN_FIELD -> "1111111111111"))
@@ -62,6 +62,10 @@ class BookReaderSuite extends BaseSuite with ScalaFutures {
       assertMandatoryField(TITLE_FIELD)
 
       var result = publishCsvBook(TITLE_FIELD -> "  The Name of the Wind  ")
+      result.title shouldBe "The Name of the Wind"
+      result.series should not be defined
+
+      result = publishCsvBook(TITLE_FIELD -> "The Name of the Wind ( The Kingkiller Chronicle)")
       result.title shouldBe "The Name of the Wind"
       result.series should not be defined
 
