@@ -51,9 +51,9 @@ trait CsvReader[T] extends LazyLogging {
 
   private def csvToMap: Flow[List[ByteString], Map[String, String], NotUsed] = CsvToMap.toMapAsStrings()
 
-  protected def mapToEntity: Flow[Map[String, String], Future[T], NotUsed]
+  private[readers] def mapToEntity: Flow[Map[String, String], Future[T], NotUsed]
 
-  protected def save: Flow[Future[T], Future[(T, Boolean)], NotUsed] = Flow[Future[T]].map(_.map { book =>
+  private def save: Flow[Future[T], Future[(T, Boolean)], NotUsed] = Flow[Future[T]].map(_.map { book =>
     // TODO Implement me!
     (book, false)
   })

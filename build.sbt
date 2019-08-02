@@ -2,7 +2,7 @@ name := "akka-bookstore"
 
 version := "0.1"
 
-scalaVersion := "2.13.0"
+scalaVersion := "2.12.8"
 
 libraryDependencies ++= Seq(
   "com.typesafe.scala-logging"  %%  "scala-logging"     % "3.9.2",
@@ -20,9 +20,17 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream"
 ).map(_ % akkaVersion)
 
-libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-http",
-  "com.typesafe.akka" %% "akka-http-spray-json"
-).map(_ % akkaHttpVersion)
+//libraryDependencies ++= Seq(
+//  "com.typesafe.akka" %% "akka-http",
+//  "com.typesafe.akka" %% "akka-http-spray-json"
+//).map(_ % akkaHttpVersion)
 
 libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-csv" % "1.1.0"
+
+// Test dependencies
+libraryDependencies ++= Seq(
+  "org.scalatest"     %% "scalatest"           % "3.0.8",
+  "org.mockito"       %  "mockito-core"        % "3.0.0",
+  "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion
+//  "com.typesafe.akka" %%  "akka-http-testkit" % akkaHttpVersion
+).map(_ % Test)
