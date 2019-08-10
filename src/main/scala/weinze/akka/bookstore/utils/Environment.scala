@@ -1,15 +1,17 @@
 package weinze.akka.bookstore.utils
 
 import com.typesafe.config.ConfigFactory
+import com.typesafe.scalalogging.LazyLogging
 
-object Environment {
+object Environment extends LazyLogging {
 
   private lazy val config = ConfigFactory.load()
 
-//  private lazy val mongoConfig = config.getConfig("mongo")
-//  lazy val mongoUri: String = mongoConfig.getString("uri")
-//  lazy val mongoDatabase: String = mongoConfig.getString("database")
-//  private lazy val mongoExpirationConfig = mongoConfig.getConfig("expiration")
-//  lazy val mongoExpirationEnabled: Boolean = mongoExpirationConfig.getBoolean("enabled")
-//  lazy val mongoExpirationAt: Int = mongoExpirationConfig.getInt("at")
+  private lazy val csvConfig = config.getConfig("csv")
+  lazy val csvRootPath: String = csvConfig.getString("path")
+  lazy val csvSeparator: Byte = csvConfig.getString("default-delimiter").toByte
+
+  private lazy val csvBookConfig = csvConfig.getConfig("books")
+  lazy val bookPath: String = csvBookConfig.getString("path")
+
 }

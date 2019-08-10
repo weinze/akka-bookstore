@@ -5,13 +5,14 @@ import akka.stream.scaladsl.Flow
 import weinze.akka.bookstore.exceptions.{BookstoreException, ReaderException}
 import weinze.akka.bookstore.models.{Book, BookSeries, GoodreadsBook}
 import weinze.akka.bookstore.readers.BookReader._
+import weinze.akka.bookstore.utils.Environment
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.control.NonFatal
 
 class BookReader()(implicit val executor: ExecutionContext) extends CsvReader[Book] {
 
-  protected override val FILE_PATH: String = ROOT_PATH.concat("test.csv")
+  protected override val FILE_PATH: String = Environment.bookPath
 
   private[readers] override def mapToEntity: Flow[Map[String, String], Future[Book], NotUsed] =
     Flow[Map[String, String]].map { data =>
